@@ -36,9 +36,13 @@ body {
     background-color: #f5f5f5e5;
     margin: 1rem;
     display: grid;
-    grid-template-columns: 16rem;
-    grid-template-rows: 6.5rem auto 1.5rem 3rem;
-    grid-template-areas: "image" "info" "price" "characteristics";
+    grid-template-columns: 18rem;
+    grid-template-rows: 8rem auto 3rem 4.5rem;
+    grid-template-areas: 
+    "image" 
+    "info" 
+    "price" 
+    "characteristics";
     border-radius: 5px;
     transition: all .3s ease;
 
