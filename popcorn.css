@@ -47,8 +47,8 @@ body {
 .popcorn-card:hover {
     cursor: pointer;
     transform: scale(1.1);
+    box-shadow: #32b1f6d8 -4px 9px 25px -6px;
 }
-
 .popcorn-bag__img {
     grid-area: image;
     max-width: 60%;
@@ -93,7 +93,7 @@ body {
 }
 
 .add-to-cart-btn:hover {
-    background-color:rgba(50, 177, 246, 0.847);
+    background-color:#32b1f6d8;
     color: #333333;
 
 }
