@@ -11,15 +11,8 @@ body {
   background-color: #101010;
 }
 
-
-
 .hero-cover__img {
-    background-image: url(poster.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100%;
-    background-position: center;
-    height: 20rem;
+    padding: 2rem;
 }
 
 .popcorn-container {

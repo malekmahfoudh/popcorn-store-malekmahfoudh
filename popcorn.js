@@ -25,17 +25,17 @@ function renderPopcornToUi(popcorns) {
                 <p>Flavour: ${popcorn.characteristics.flavour}</p> 
                 <p>Hardness: ${popcorn.characteristics.size}</p>    
             </section>
-            <button class="add-to-cart-btn">ADD TO CART</button>
+            <button id="${popcorn.SerialNumber}" class="add-to-cart-btn">ADD TO CART</button>
         </article>`
         
         buttonEl = document.querySelectorAll('.add-to-cart-btn').forEach(buttonEl => {
-            buttonEl.addEventListener('click', () => {
-                popcornsInCart.push(popcorn)
-                console.log(popcornsInCart)
+            buttonEl.addEventListener('click', (e) => {          
+                let serialNumber = e.target.id
+                let index = popcorns.findIndex(popcorn => popcorn.SerialNumber === serialNumber)
+                popcornsInCart.push(popcorns[index])
+                console.log(popcornsInCart);
+
             });
         });
     });
 }
-
-
-
